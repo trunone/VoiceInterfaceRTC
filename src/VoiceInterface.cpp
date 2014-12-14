@@ -134,10 +134,10 @@ RTC::ReturnCode_t VoiceInterface::onExecute(RTC::UniqueId ec_id)
         } else if(speech_in == "stop") {
             m_command.data = kStop;
             m_commandOut.write();
-        } else if(speech_in == "move to target") {
+        } else if(speech_in == "go to the target") {
             m_command.data = kMoveTo;
             m_commandOut.write();
-        } else if(speech_in == "save target") {
+        } else if(speech_in == "save the target") {
             m_command.data = kSaveTarget;
             m_commandOut.write();
         }
